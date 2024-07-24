@@ -178,7 +178,6 @@ func (w *WatchVulnApp) Run(ctx context.Context) error {
 			hour := time.Now().Hour()
 			if hour >= 0 && hour < 7 {
 				// we must sleep in this time
-				w.log.Infof("sleeping..")
 				w.log.Infof("卷卷卷!")
 			}
 			w.collectAndPush(ctx)
